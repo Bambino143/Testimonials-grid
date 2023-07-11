@@ -31,7 +31,11 @@ body {
   width: 30px;
 }
 
-span {
+h1 {
+  font-size: 12px;
+}
+
+.mg-left {
   margin-left: 10px;
 }
 
