@@ -1,9 +1,10 @@
 @import url(https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600;800;900&display=swap);
 
 body {
-  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-family: "Barlow Semi Condensed", sans-serif;
   /* color: var(--White); */
   background-color: var(--Light-grayish-blue);
+  font-size: 15px;
 }
 * {
   margin: 0;
@@ -20,10 +21,18 @@ body {
 
 .icon-name {
   display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 11px;
+}
+
+.icon-name img {
+  border-radius: 100%;
+  width: 30px;
 }
 
 span {
-  margin-left: 30px;
+  margin-left: 10px;
 }
 
 #container {
@@ -31,36 +40,93 @@ span {
   grid-template-columns: repeat(4, 1fr);
   margin: 100px auto 0 auto;
   max-width: 80%;
-  border: 2px solid red;
   gap: 25px;
 }
 
 #box-1 {
+  color: var(--White);
   background-color: var(--Moderate-violet);
   background-image: url(images/bg-pattern-quotation.svg);
   background-repeat: no-repeat;
+  background-position: 80% 0px;
   grid-column: span 2;
 }
 
 #box-2 {
   background-color: var(--White);
   grid-row: 2;
-  
+  color: var(--Very-dark-grayish-blue);
 }
 
 #box-3 {
   background-color: var(--Very-dark-grayish-blue);
+  color: var(--White);
 }
 
 #box-4 {
   background-color: var(--White);
   grid-column: 4;
   grid-row: span 2;
-  
+  color: var(--Very-dark-grayish-blue);
 }
 
 #box-5 {
   background-color: var(--Very-dark-blackish-blue);
   grid-column: span 2;
-  
+  color: var(--White);
+}
+
+.box-padding {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 10px 12px 35px -2px rgba(74, 64, 64, 0.33);
+}
+.box-padding p {
+  color: var(--Light-gray);
+  font-weight: 500;
+}
+
+.text-spacing h3 {
+  margin-bottom: 20px;
+}
+
+.purple-border2 {
+  border: 2px var(--Moderate-violet) solid;
+}
+
+.purple-border1 {
+  border: 2px hsl(263, 83%, 61%) solid;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 60px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 1069px) {
+  #container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #box-5 {
+    grid-column: unset;
+  }
+  #box-4 {
+    grid-column: unset;
+    grid-row: 5;
+  }
+
+  #box-2 {
+    grid-row: unset;
+  }
+  #box-1 {
+    grid-column: unset;
+  }
+  #box-3 {
+    grid-row: 2;
+  }
 }
