@@ -34,7 +34,9 @@ body {
 h1 {
   font-size: 12px;
 }
-
+h2 {
+  font-size: 15px;
+}
 .mg-left {
   margin-left: 10px;
 }
@@ -90,7 +92,7 @@ h1 {
   font-weight: 500;
 }
 
-.text-spacing h3 {
+.text-spacing h2 {
   margin-bottom: 20px;
 }
 
